@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Navbar = () => (
-  <Section className="flex space-x">
+  <Section className="flex justify-between">
     <div className="">
       <h1>logo</h1>
     </div>
