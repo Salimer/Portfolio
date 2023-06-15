@@ -13,6 +13,6 @@ const Navbar = () => (
 
 export default Navbar;
 
-const Section = styled.section`
+const Section = styled.header`
 
 `;
