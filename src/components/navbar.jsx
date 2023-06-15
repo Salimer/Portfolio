@@ -1,4 +1,3 @@
-
 const Navbar = () => (
   <section className="flex space-x">
     <div className="">
