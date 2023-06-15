@@ -5,7 +5,7 @@ import Welcome from './components/welcome';
 
 function App() {
   return (
-    <Container>
+    <Container className="px-6">
       <Navbar />
       <Welcome />
     </Container>
@@ -14,6 +14,4 @@ function App() {
 
 export default App;
 
-const Container = styled.div`
-
-`;
+const Container = styled.div``;
