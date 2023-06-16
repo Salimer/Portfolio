@@ -5,7 +5,9 @@ const projects = [
   {
     id: 1,
     name: 'Project 1',
+    type: ['CANOPY', 'Front End Dev', '2015'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+    technology: ['HTML', 'CSS', 'JS'],
     image: 'https://picsum.photos/200/300',
     link: 'https://picsum.photos/200/300',
   },
@@ -14,6 +16,7 @@ const projects = [
     name: 'Project 2',
     type: ['CANOPY', 'Back End Dev', '2015'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
+    technology: ['HTML', 'CSS', 'JS'],
     image: 'https://picsum.photos/200/300',
     link: 'https://picsum.photos/200/300',
   },
