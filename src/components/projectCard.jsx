@@ -3,9 +3,21 @@ import PropTypes from 'prop-types';
 
 const ProjectCard = ({ project }) => (
   <Li className="m-6 p-4 flex flex-col bg-white gap-3">
-    <img src={project.image} className="w-3 h-3" alt={project.name} />
+    <img src={project.image} className="w-full h-56 rounded-lg" alt={project.name} />
     <h2>{project.name}</h2>
+    <div>
+      <span>{project.type[0]}</span>
+      <ion-icon name="ellipse" />
+      <span>{project.type[1]}</span>
+      <ion-icon name="ellipse" />
+      <span>{project.type[2]}</span>
+    </div>
     <p>{project.description}</p>
+    <div>
+      <span>{project.technology[0]}</span>
+      <span>{project.technology[1]}</span>
+      <span>{project.technology[2]}</span>
+    </div>
   </Li>
 );
 
@@ -18,6 +30,8 @@ ProjectCard.propTypes = {
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
+    type: PropTypes.arrayOf(PropTypes.string).isRequired,
+    technology: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };
 
@@ -39,5 +53,11 @@ const Li = styled.li`
         font-size: 1rem;
         font-weight: 400;
         margin: 0.5rem 0;
+    }
+
+    ion-icon {
+        font-size: 0.7rem;
+        margin: 0 0.5rem;
+        color: #c1c7d0;
     }
 `;
