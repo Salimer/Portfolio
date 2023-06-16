@@ -12,12 +12,14 @@ const Welcome = () => (
       feature or website Look through some of my work and experience!
       If you like what you see and have a project you need coded, don’t hesitate to contact me.
     </p>
-    <h3>LET’S CONNECT</h3>
-    <div className="flex gap-4 my-4">
-      <ion-icon size="large" name="logo-github" />
-      <ion-icon size="large" name="logo-linkedin" />
-      <ion-icon size="large" name="logo-twitter" />
-      <ion-icon size="large" name="logo-medium" />
+    <div className="w-full py-4">
+      <h3 className="text-logoColor">LET’S CONNECT</h3>
+      <div className="flex gap-4 my-2">
+        <ion-icon size="large" name="logo-github" />
+        <ion-icon size="large" name="logo-linkedin" />
+        <ion-icon size="large" name="logo-twitter" />
+        <ion-icon size="large" name="logo-medium" />
+      </div>
     </div>
   </Section>
 );
