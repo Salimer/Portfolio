@@ -12,6 +12,7 @@ const projects = [
   {
     id: 2,
     name: 'Project 2',
+    type: ['CANOPY', 'Back End Dev', '2015'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
     image: 'https://picsum.photos/200/300',
     link: 'https://picsum.photos/200/300',
