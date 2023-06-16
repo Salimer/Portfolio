@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const ProjectCard = ({ project }) => (
-  <Li>
-    <img src={project.image} alt={project.name} />
+  <Li className="m-6 p-4 flex flex-col bg-white gap-3">
+    <img src={project.image} className="w-3 h-3" alt={project.name} />
     <h2>{project.name}</h2>
     <p>{project.description}</p>
   </Li>
@@ -29,9 +29,6 @@ const Li = styled.li`
     &:hover {
         box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
         transform: scale(1.05);
-    }
-    img {
-        width: 100%;
     }
     h2 {
         font-size: 1.5rem;
