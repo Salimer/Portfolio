@@ -5,7 +5,7 @@ import Welcome from './components/welcome';
 
 function App() {
   return (
-    <Container className="px-6">
+    <Container className="px-6 font-[Poppins]">
       <Navbar />
       <Welcome />
     </Container>
