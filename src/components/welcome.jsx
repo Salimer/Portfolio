@@ -32,6 +32,7 @@ const Section = styled.section`
 
   ion-icon {
     color: #505F79;
+    z-index: 0;
   }
 `;
 
