@@ -30,3 +30,7 @@ code {
     'Courier New',
     monospace;
 }
+
+ul {
+  list-style: none;
+}
