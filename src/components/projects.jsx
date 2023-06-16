@@ -7,7 +7,7 @@ const projects = [
     name: 'Project 1',
     type: ['CANOPY', 'Front End Dev', '2015'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-    technology: ['HTML', 'CSS', 'JS'],
+    technology: ['HTML', 'CSS', 'JavaScript'],
     image: 'https://picsum.photos/200/300',
     link: 'https://picsum.photos/200/300',
   },
