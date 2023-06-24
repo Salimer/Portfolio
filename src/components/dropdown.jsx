@@ -11,7 +11,7 @@ const DropdownMenu = ({ title, items }) => {
 
   const handleItemClick = (item) => {
     // Do something with the selected item
-    
+    console.log(item);
     // Close the dropdown
     setIsOpen(false);
   };
