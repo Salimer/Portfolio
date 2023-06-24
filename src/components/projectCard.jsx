@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => (
         {project.technology[2]}
       </span>
     </div>
-    <Button>See Project</Button>
+    <Button button>See Project</Button>
   </Li>
 );
 
