@@ -16,7 +16,7 @@ const About = () => (
         If you like what you see and have a project you need coded, don’t hesitate to contact me.
       </p>
       <Connect />
-      <Button>Get my resume</Button>
+      <Button button>Get my resume</Button>
     </article>
     <DropdownMenu title="Languages" items={['JavaScript', 'HTML', 'CSS']} />
     <DropdownMenu title="Frameworks" items={['React', 'Vue', 'Angular']} />
