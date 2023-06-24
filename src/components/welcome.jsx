@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Connect from './connect';
 
 const borderRadiusValue = '0 0 0 4rem';
 const Welcome = () => (
@@ -13,15 +14,7 @@ const Welcome = () => (
       feature or website Look through some of my work and experience!
       If you like what you see and have a project you need coded, don’t hesitate to contact me.
     </p>
-    <div className="w-full">
-      <h3 className="text-logoColor">LET’S CONNECT</h3>
-      <div className="flex gap-4 my-2">
-        <ion-icon size="large" name="logo-github" />
-        <ion-icon size="large" name="logo-linkedin" />
-        <ion-icon size="large" name="logo-twitter" />
-        <ion-icon size="large" name="logo-medium" />
-      </div>
-    </div>
+    <Connect />
   </Section>
 );
 
@@ -29,11 +22,6 @@ export default Welcome;
 
 const Section = styled.section`
   border-radius: ${(props) => props.borderRadius};
-
-  ion-icon {
-    color: #505F79;
-    z-index: 0;
-  }
 `;
 
 Section.defaultProps = {
