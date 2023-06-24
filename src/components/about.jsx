@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Button from './button';
 import Connect from './connect';
+import DropdownMenu from './dropdown';
 
 const borderRadiusValue = '0 4rem 0 0';
 const About = () => (
@@ -17,6 +18,9 @@ const About = () => (
       <Connect />
       <Button>Get my resume</Button>
     </article>
+    <DropdownMenu title="Languages" items={['JavaScript', 'HTML', 'CSS']} />
+    <DropdownMenu title="Frameworks" items={['React', 'Vue', 'Angular']} />
+    <DropdownMenu title="Tools" items={['Git', 'GitHub', 'VS Code']} />
   </Section>
 );
 
