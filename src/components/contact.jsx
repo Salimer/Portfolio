@@ -16,18 +16,18 @@ const Contact = () => (
         type="text"
         name="name"
         placeholder="Name"
-        className=""
+        className="p-4 rounded-lg my-2 border-2 border-logoColor2 tracking-wide text-logoColor2 bg-white w-full"
       />
       <input
         type="email"
         name="email"
         placeholder="Email"
-        className=""
+        className="p-4 rounded-lg my-2 border-2 border-logoColor2 tracking-wide text-logoColor2 bg-white w-full"
       />
       <textarea
         name="message"
         placeholder="Message"
-        className=""
+        className="p-4 rounded-lg my-2 border-2 border-logoColor2 tracking-wide text-logoColor2 bg-white w-full h-44"
       />
       <Button>Get in touch</Button>
     </form>
@@ -39,5 +39,9 @@ export default Contact;
 const Section = styled.section`
     .contact {
         border-radius: 4rem 0 0 0;
+    }
+
+    button {
+        align-self: flex-start;
     }
 `;
