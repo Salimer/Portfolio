@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Button from './Button';
 
 const ProjectCard = ({ project }) => (
   <Li className="m-6 p-4 flex flex-col bg-white gap-3">
@@ -26,7 +27,7 @@ const ProjectCard = ({ project }) => (
         {project.technology[2]}
       </span>
     </div>
-    <button type="button" className="w-fit p-4 rounded-lg my-5 border-2 border-logoColor2 tracking-wide text-logoColor2">See project</button>
+    <Button>See Project</Button>
   </Li>
 );
 
