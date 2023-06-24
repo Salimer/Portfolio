@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Button from './button';
+import Button from './Button';
 
 const ProjectCard = ({ project }) => (
   <Li className="m-6 p-4 flex flex-col bg-white gap-3">
