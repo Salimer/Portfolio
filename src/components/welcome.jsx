@@ -3,7 +3,7 @@ import Connect from './connect';
 
 const borderRadiusValue = '0 0 0 4rem';
 const Welcome = () => (
-  <Section className="p-6 flex flex-col justify-center items-center pt-40 bg-white h-screen md:p-32">
+  <Section id="headline" className="p-6 flex flex-col justify-center items-center pt-40 pb-32 bg-white md:p-32">
     <h1 className="text-4xl text-left w-full font-bold leading-relaxed">
       I’m Salim.
       <br />
