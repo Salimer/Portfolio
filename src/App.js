@@ -8,7 +8,7 @@ import Contact from './components/contact';
 
 function App() {
   return (
-    <Container className="font-[Poppins] bg-bodyBackground">
+    <Container className="bg-bodyBackground">
       <Navbar />
       <Welcome />
       <Projects />
@@ -20,4 +20,6 @@ function App() {
 
 export default App;
 
-const Container = styled.div``;
+const Container = styled.div`
+font-family: 'Poppins', sans-serif;
+`;
