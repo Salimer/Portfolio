@@ -42,6 +42,7 @@ const Navbar = () => {
 export default Navbar;
 
 const Section = styled.header`
+z-index: 999;
 ion-icon {
   color: #6936f5;
 }
