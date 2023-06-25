@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Image } from 'react-bootstrap';
 import Button from './Button';
+import bookstore from '../assets/projects/bookstore.png';
 
 const ProjectCard = ({ project }) => {
   const handleButtonClick = (e) => {
@@ -12,7 +14,9 @@ const ProjectCard = ({ project }) => {
   return (
     <Li className={`m-6 p-4 flex flex-col bg-white gap-3 max-w-sm ${mdFlexDirection} md:gap-10 md:max-w-5xl`}>
       <div className="md:w-1/2">
-        <img src={project.image} className="w-full h-52 rounded-lg md:h-96" alt={project.name} />
+        {/* <img src={project.image} className="w-full h-52
+        rounded-lg md:h-96" alt={project.name} /> */}
+        <Image src={bookstore} className="w-full h-52 rounded-lg md:h-96" alt={project.name} />
       </div>
       <div className="flex flex-col md:gap-5">
         <h2 className="text-logoColor4">{project.name}</h2>
