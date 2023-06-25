@@ -32,7 +32,7 @@ const About = () => {
     window.open('https://docs.google.com/document/d/1PyB0_12bv3lvoj88u92PmLHuWKKQPP9ZVmoHLwB7a3o/edit?usp=sharing');
   };
   return (
-    <Section className="p-6 flex flex-col justify-center items-center bg-white md:flex-row">
+    <Section className="p-6 flex flex-col justify-center items-center bg-white md:flex-row md:p-32">
       <article>
         <h1 className="text-4xl text-left w-full font-bold leading-relaxed">
           About Me
