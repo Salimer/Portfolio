@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.cffc7edc.css",
-    "main.js": "/Portfolio/static/js/main.2733de08.js",
+    "main.js": "/Portfolio/static/js/main.c83097da.js",
     "static/js/787.b98c23e5.chunk.js": "/Portfolio/static/js/787.b98c23e5.chunk.js",
-    "static/media/RLCS.png": "/Portfolio/static/media/RLCS.35153db988ef61df0c22.png",
-    "static/media/commentdish.png": "/Portfolio/static/media/commentdish.786472ebc09ef5e6cf55.png",
-    "static/media/spaceHub.png": "/Portfolio/static/media/spaceHub.fb094af4b094c1c440da.png",
+    "static/media/RLCS.png": "/Portfolio/static/media/RLCS.775a78d69872d283fa9c.png",
+    "static/media/commentdish.png": "/Portfolio/static/media/commentdish.49c01eba75d5dff82440.png",
+    "static/media/spaceHub.png": "/Portfolio/static/media/spaceHub.e4c7132aefdd6b129902.png",
     "static/media/bookstore.png": "/Portfolio/static/media/bookstore.f030df01dd8fd28405a2.png",
     "static/media/leaderboard.png": "/Portfolio/static/media/leaderboard.496553ccc42e84d1ec50.png",
     "static/media/todo.png": "/Portfolio/static/media/todo.b8e414dde8b0792a834c.png",
@@ -15,11 +15,11 @@
     "static/media/contact-shapes.svg": "/Portfolio/static/media/contact-shapes.e170950d741461ccf60a0cc8643b87af.svg",
     "index.html": "/Portfolio/index.html",
     "main.cffc7edc.css.map": "/Portfolio/static/css/main.cffc7edc.css.map",
-    "main.2733de08.js.map": "/Portfolio/static/js/main.2733de08.js.map",
+    "main.c83097da.js.map": "/Portfolio/static/js/main.c83097da.js.map",
     "787.b98c23e5.chunk.js.map": "/Portfolio/static/js/787.b98c23e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cffc7edc.css",
-    "static/js/main.2733de08.js"
+    "static/js/main.c83097da.js"
   ]
 }
