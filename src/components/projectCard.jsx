@@ -26,15 +26,11 @@ const ProjectCard = ({ project }) => {
         </div>
         <p>{project.description}</p>
         <div className="flex gap-2 items-center flex-wrap">
-          <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
-            {project.technology[0]}
-          </span>
-          <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
-            {project.technology[1]}
-          </span>
-          <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
-            {project.technology[2]}
-          </span>
+          {project.technology.map((tech) => (
+            <span key={tech} className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
+              {tech}
+            </span>
+          ))}
         </div>
         <Button button handleClick={handleButtonClick}>See Project</Button>
       </div>
