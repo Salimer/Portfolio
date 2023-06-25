@@ -13,9 +13,9 @@ const ProjectCard = ({ project }) => {
   return (
     <Li className={`m-6 p-4 flex flex-col bg-white gap-3 max-w-sm ${mdFlexDirection} md:gap-10 md:max-w-5xl`}>
       <div className="md:w-1/2 bg-logoColor flex justify-center items-center rounded-lg">
-        <Image src={project.image} className="md:px-2" alt={project.name} />
+        <Image src={project.image} className="py-2 px-1 md:px-2" alt={project.name} />
       </div>
-      <div className="flex flex-col md:gap-5">
+      <div className="flex flex-col md:gap-5 md:w-1/2">
         <h2 className="text-logoColor4">{project.name}</h2>
         <div>
           <span className="text-logoColor2 font-semibold">{project.type[0]}</span>
@@ -26,15 +26,11 @@ const ProjectCard = ({ project }) => {
         </div>
         <p>{project.description}</p>
         <div className="flex gap-2 items-center flex-wrap">
-          <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
-            {project.technology[0]}
-          </span>
-          <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
-            {project.technology[1]}
-          </span>
-          <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
-            {project.technology[2]}
-          </span>
+          {project.technology.map((tech) => (
+            <span key={tech} className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
+              {tech}
+            </span>
+          ))}
         </div>
         <Button button handleClick={handleButtonClick}>See Project</Button>
       </div>
