@@ -8,11 +8,11 @@ const ProjectCard = ({ project }) => {
     window.open(project.link);
   };
   return (
-    <Li className="m-6 p-4 flex flex-col bg-white gap-3 md:flex-row">
+    <Li className="m-6 p-4 flex flex-col bg-white gap-3 md:flex-row md:gap-10">
       <div className="md:w-1/2">
         <img src={project.image} className="w-full h-52 rounded-lg md:h-96" alt={project.name} />
       </div>
-      <div>
+      <div className="flex flex-col md:gap-5">
         <h2 className="text-logoColor4">{project.name}</h2>
         <div>
           <span className="text-logoColor2 font-semibold">{project.type[0]}</span>
