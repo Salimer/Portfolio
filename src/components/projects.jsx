@@ -5,6 +5,8 @@ import commentdish from '../assets/projects/commentDish.png';
 import spaceHub from '../assets/projects/spaceHub.png';
 import RLCS from '../assets/projects/RLCS.png';
 import mathmagicians from '../assets/projects/mathmagicians.png';
+import leaderboard from '../assets/projects/leaderboard.png';
+import todo from '../assets/projects/todo.png';
 
 const projects = [
   {
@@ -51,6 +53,24 @@ const projects = [
     technology: ['React', 'SCSS'],
     image: mathmagicians,
     link: 'https://github.com/Salimer/Math-magicians',
+  },
+  {
+    id: 6,
+    name: 'Leaderboard-project',
+    type: ['SALIMER', 'Front End Dev', '2023'],
+    description: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.',
+    technology: ['HTML', 'JavaScript', 'SCSS'],
+    image: leaderboard,
+    link: 'https://github.com/Salimer/Leaderboard-project',
+  },
+  {
+    id: 7,
+    name: 'To-Do-List',
+    type: ['SALIMER', 'Front End Dev', '2023'],
+    description: 'To-Do List is a project to showcase daily tasks arrangement with the help of webpack.',
+    technology: ['HTML', 'JavaScript', 'SCSS', 'Webpack'],
+    image: todo,
+    link: 'https://github.com/Salimer/To-Do-List',
   },
 ];
 
