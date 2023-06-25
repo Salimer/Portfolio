@@ -4,6 +4,7 @@ import Navbar from './components/navbar';
 import Welcome from './components/welcome';
 import Projects from './components/projects';
 import About from './components/about';
+import Contact from './components/contact';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Welcome />
       <Projects />
       <About />
+      <Contact />
     </Container>
   );
 }
