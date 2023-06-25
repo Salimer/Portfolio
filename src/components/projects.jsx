@@ -23,8 +23,7 @@ const projects = [
 ];
 
 const Projects = () => (
-  <Section>
-    <h1>Projects</h1>
+  <Section id="projects" className="py-28">
     <ul className="flex flex-col items-center">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
