@@ -15,7 +15,7 @@ const Contact = () => {
   };
 
   return (
-    <Section className="bg-white">
+    <Section id="contact" className="bg-white">
       <article className="contact p-6 bg-logoColor flex flex-col items-center pt-24 ">
         <h1 className="text-white text-4xl w-full font-bold leading-relaxed text-center max-w-lg">Contact me</h1>
         <p className="text-lg text-center py-4 text-white max-w-lg">
