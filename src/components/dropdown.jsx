@@ -1,19 +1,13 @@
-import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const DropdownMenu = ({ title, items }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
+const DropdownMenu = ({
+  title, items, isOpen, toggleDropdown,
+}) => {
   const handleItemClick = (item) => {
     // Do something with the selected item
     console.log(item);
     // Close the dropdown
-    setIsOpen(false);
   };
 
   return (
@@ -39,7 +33,7 @@ const DropdownMenu = ({ title, items }) => {
           <ul>
             {items.map((item) => (
               <li
-                className="p-5 my-2 hover:bg-logoColor2 text-logoColor2 bg-bodyBackground rounded-lg"
+                className="p-5 my-2 text-logoColor2 bg-bodyBackground rounded-lg"
                 key={item}
                 onClick={() => handleItemClick(item)}
                 onKeyDown={(e) => {
@@ -69,4 +63,6 @@ const Dropdown = styled.section`
 DropdownMenu.propTypes = {
   title: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  toggleDropdown: PropTypes.func.isRequired,
 };

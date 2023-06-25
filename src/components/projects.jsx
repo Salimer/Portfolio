@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ProjectCard from './projectCard';
+import bookstore from '../assets/projects/bookstore.png';
 
 const projects = [
   {
@@ -8,8 +9,8 @@ const projects = [
     type: ['CANOPY', 'Front End Dev', '2015'],
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
     technology: ['HTML', 'CSS', 'JavaScript'],
-    image: 'https://picsum.photos/200/300',
-    link: 'https://picsum.photos/200/300',
+    image: bookstore,
+    link: 'https://www.googl.com',
   },
   {
     id: 2,
@@ -23,9 +24,8 @@ const projects = [
 ];
 
 const Projects = () => (
-  <Section>
-    <h1>Projects</h1>
-    <ul>
+  <Section id="projects" className="py-28">
+    <ul className="flex flex-col items-center">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}

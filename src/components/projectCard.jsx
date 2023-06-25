@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Image } from 'react-bootstrap';
 import Button from './Button';
 
 const ProjectCard = ({ project }) => {
@@ -7,32 +8,36 @@ const ProjectCard = ({ project }) => {
     e.preventDefault();
     window.open(project.link);
   };
+
+  const mdFlexDirection = project.id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row';
   return (
-    <Li className="m-6 p-4 flex flex-col bg-white gap-3">
-      <div>
-        <img src={project.image} className="w-full h-52 rounded-lg" alt={project.name} />
+    <Li className={`m-6 p-4 flex flex-col bg-white gap-3 max-w-sm ${mdFlexDirection} md:gap-10 md:max-w-5xl`}>
+      <div className="md:w-1/2 bg-logoColor flex justify-center items-center rounded-lg">
+        <Image src={project.image} className="md:px-2" alt={project.name} />
       </div>
-      <h2 className="text-logoColor4">{project.name}</h2>
-      <div>
-        <span className="text-logoColor2 font-semibold">{project.type[0]}</span>
-        <ion-icon name="ellipse" />
-        <span className="text-projectCardText font-semibold">{project.type[1]}</span>
-        <ion-icon name="ellipse" />
-        <span className="text-projectCardText font-semibold">{project.type[2]}</span>
+      <div className="flex flex-col md:gap-5">
+        <h2 className="text-logoColor4">{project.name}</h2>
+        <div>
+          <span className="text-logoColor2 font-semibold">{project.type[0]}</span>
+          <ion-icon name="ellipse" />
+          <span className="text-projectCardText font-semibold">{project.type[1]}</span>
+          <ion-icon name="ellipse" />
+          <span className="text-projectCardText font-semibold">{project.type[2]}</span>
+        </div>
+        <p>{project.description}</p>
+        <div className="flex gap-2 items-center flex-wrap">
+          <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
+            {project.technology[0]}
+          </span>
+          <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
+            {project.technology[1]}
+          </span>
+          <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
+            {project.technology[2]}
+          </span>
+        </div>
+        <Button button handleClick={handleButtonClick}>See Project</Button>
       </div>
-      <p>{project.description}</p>
-      <div className="flex gap-2 items-center flex-wrap">
-        <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
-          {project.technology[0]}
-        </span>
-        <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
-          {project.technology[1]}
-        </span>
-        <span className="bg-logoColor6 px-4 py-1 rounded-lg text-sm text-logoColor font-medium tracking-wide">
-          {project.technology[2]}
-        </span>
-      </div>
-      <Button button handleClick={handleButtonClick}>See Project</Button>
     </Li>
   );
 };

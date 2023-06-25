@@ -8,8 +8,11 @@ const Button = ({ children, button, handleClick }) => (
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  button: PropTypes.bool.isRequired,
+  button: PropTypes.bool,
   handleClick: PropTypes.func.isRequired,
 };
 
+Button.defaultProps = {
+  button: false,
+};
 export default Button;

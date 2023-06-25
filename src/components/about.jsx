@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import Connect from './connect';
@@ -5,12 +6,33 @@ import DropdownMenu from './dropdown';
 
 const borderRadiusValue = '0 4rem 0 0';
 const About = () => {
+  const [isOpen1, setIsOpen1] = useState(true);
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
+
+  const toggleDropdown1 = () => {
+    setIsOpen1(true);
+    setIsOpen2(false);
+    setIsOpen3(false);
+  };
+
+  const toggleDropdown2 = () => {
+    setIsOpen1(false);
+    setIsOpen2(true);
+    setIsOpen3(false);
+  };
+
+  const toggleDropdown3 = () => {
+    setIsOpen1(false);
+    setIsOpen2(false);
+    setIsOpen3(true);
+  };
   const handleResumeClick = (e) => {
     e.preventDefault();
     window.open('https://docs.google.com/document/d/1PyB0_12bv3lvoj88u92PmLHuWKKQPP9ZVmoHLwB7a3o/edit?usp=sharing');
   };
   return (
-    <Section className="p-6 flex flex-col justify-center items-center bg-white">
+    <Section id="about-me" className="p-6 flex flex-col justify-center items-center bg-white md:flex-row md:p-32">
       <article>
         <h1 className="text-4xl text-left w-full font-bold leading-relaxed">
           About Me
@@ -23,9 +45,11 @@ const About = () => {
         <Connect />
         <Button button handleClick={handleResumeClick}>Get my resume</Button>
       </article>
-      <DropdownMenu title="Languages" items={['JavaScript', 'HTML', 'CSS']} />
-      <DropdownMenu title="Frameworks" items={['React', 'Vue', 'Angular']} />
-      <DropdownMenu title="Tools" items={['Git', 'GitHub', 'VS Code']} />
+      <article className="md:flex-col md:pl-5 w-full">
+        <DropdownMenu title="Languages" items={['JavaScript', 'HTML', 'CSS']} isOpen={isOpen1} toggleDropdown={toggleDropdown1} />
+        <DropdownMenu title="Frameworks" items={['React', 'Vue', 'Angular']} isOpen={isOpen2} toggleDropdown={toggleDropdown2} />
+        <DropdownMenu title="Tools" items={['Git', 'GitHub', 'VS Code']} isOpen={isOpen3} toggleDropdown={toggleDropdown3} />
+      </article>
     </Section>
   );
 };
