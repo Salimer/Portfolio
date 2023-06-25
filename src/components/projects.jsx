@@ -25,7 +25,7 @@ const projects = [
 const Projects = () => (
   <Section>
     <h1>Projects</h1>
-    <ul>
+    <ul className="flex flex-col items-center">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
