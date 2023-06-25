@@ -7,8 +7,10 @@ const ProjectCard = ({ project }) => {
     e.preventDefault();
     window.open(project.link);
   };
+
+  const mdFlexDirection = project.id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row';
   return (
-    <Li className="m-6 p-4 flex flex-col bg-white gap-3 md:flex-row md:gap-10">
+    <Li className={`m-6 p-4 flex flex-col bg-white gap-3 ${mdFlexDirection} md:gap-10`}>
       <div className="md:w-1/2">
         <img src={project.image} className="w-full h-52 rounded-lg md:h-96" alt={project.name} />
       </div>
