@@ -13,10 +13,10 @@ const ProjectCard = ({ project }) => {
   const mdFlexDirection = project.id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row';
   return (
     <Li className={`m-6 p-4 flex flex-col bg-white gap-3 max-w-sm ${mdFlexDirection} md:gap-10 md:max-w-5xl`}>
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 bg-logoColor flex justify-center items-center rounded-lg">
         {/* <img src={project.image} className="w-full h-52
         rounded-lg md:h-96" alt={project.name} /> */}
-        <Image src={bookstore} className="w-full h-52 rounded-lg md:h-96" alt={project.name} />
+        <Image src={bookstore} className="md:px-2" alt={project.name} />
       </div>
       <div className="flex flex-col md:gap-5">
         <h2 className="text-logoColor4">{project.name}</h2>
