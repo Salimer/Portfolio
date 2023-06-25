@@ -4,11 +4,11 @@ import { ReactComponent as Logo } from '../assets/logo.svg';
 
 const Navbar = () => {
   const Links = [
-    { name: 'HOME', link: '/' },
-    { name: 'SERVICE', link: '/' },
-    { name: 'ABOUT', link: '/' },
+    { name: 'HOME', link: '#headline' },
+    { name: 'PROJECTS', link: '#projects' },
+    { name: 'ABOUT', link: '#about-me' },
     { name: "BLOG'S", link: '/' },
-    { name: 'CONTACT', link: '/' },
+    { name: 'CONTACT', link: '#contact' },
   ];
 
   const [open, setOpen] = useState(false);
