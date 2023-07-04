@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
   return (
     <Li className={`m-6 p-4 flex flex-col bg-white gap-3 max-w-sm ${mdFlexDirection} md:gap-10 md:max-w-5xl`}>
       <div className="md:w-1/2 bg-logoColor flex justify-center items-center rounded-lg">
-        <Image src={project.image} className="py-2 px-1 md:px-2" alt={project.name} />
+        <a href={`${project.liveDemo}`} target="_blank" rel="noreferrer"><Image src={project.image} className="py-2 px-1 md:px-2" alt={project.name} /></a>
       </div>
       <div className="flex flex-col md:gap-5 md:w-1/2">
         <h2 className="text-logoColor4">{project.name}</h2>
@@ -49,6 +49,7 @@ ProjectCard.propTypes = {
     link: PropTypes.string.isRequired,
     type: PropTypes.arrayOf(PropTypes.string).isRequired,
     technology: PropTypes.arrayOf(PropTypes.string).isRequired,
+    liveDemo: PropTypes.string.isRequired,
   }).isRequired,
 };
 
