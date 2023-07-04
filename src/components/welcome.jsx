@@ -4,7 +4,7 @@ import headlineShapes from '../assets/headline-shapes.svg';
 
 const borderRadiusValue = '0 0 0 4rem';
 const Welcome = () => (
-  <Section id="headline" className="p-6 flex flex-col justify-center items-center pt-40 pb-32 bg-white md:p-56">
+  <Section id="headline" className="p-6 flex flex-col justify-center items-center pt-40 pb-32 bg-white md:p-56 mt-14">
     <h1 className="text-4xl text-left w-full font-bold leading-relaxed">
       I’m Salim.
       <br />
