@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
             </span>
           ))}
         </div>
-        <Button button handleClick={handleButtonClick}>See Project</Button>
+        <Button button handleClick={handleButtonClick}>Project at GitHub</Button>
       </div>
     </Li>
   );
