@@ -19,7 +19,7 @@ Button.defaultProps = {
 export default Button;
 
 const BigButton = styled.button`
-transition: background-color 0.3s ease-in-out;
+transition: background-color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 
 &:hover {
   background-color: #6936f5;
