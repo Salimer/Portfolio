@@ -26,5 +26,10 @@ const Div = styled.div`
 ion-icon {
     color: #505F79;
     z-index: 0;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #6936f5;
+    }
   }
 `;
