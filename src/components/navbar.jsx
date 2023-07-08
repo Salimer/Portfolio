@@ -15,7 +15,7 @@ const Navbar = () => {
     <Section className="shadow-md w-full fixed top-0 left-0 bg-white">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
         <div className="font-bold text-2xl cursor-pointer flex items-center text-gray-800">
-          <span className="text-3xl text-indigo-600 mr-1 pt-2">
+          <span id="logo" className="text-3xl text-indigo-600">
             <Logo className="rounded-full w-9 h-9" />
           </span>
         </div>
@@ -44,5 +44,13 @@ const Section = styled.header`
 z-index: 999;
 ion-icon {
   color: #6936f5;
+}
+
+#logo {
+  transition: transform 0.9s ease-out;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
 }
 `;
