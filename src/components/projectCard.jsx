@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
   return (
     <Li className={`m-6 p-4 flex flex-col bg-white gap-3 max-w-sm ${mdFlexDirection} md:gap-10 md:max-w-5xl`}>
       <div className="md:w-1/2 bg-logoColor flex justify-center items-center rounded-lg">
-        <a href={`${project.liveDemo}`} target="_blank" rel="noreferrer"><Image src={project.image} className="py-2 px-1 md:px-2" alt={project.name} /></a>
+        <a id="card-image" href={`${project.liveDemo}`} target="_blank" rel="noreferrer"><Image src={project.image} className="py-2 px-1 md:px-2" alt={project.name} /></a>
       </div>
       <div className="flex flex-col md:gap-5 md:w-1/2">
         <h2 className="text-logoColor4">{project.name}</h2>
@@ -73,5 +73,13 @@ const Li = styled.li`
         font-size: 0.7rem;
         margin: 0 0.5rem;
         color: #c1c7d0;
+    }
+
+    #card-image {
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.08);
+      }
     }
 `;
