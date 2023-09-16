@@ -22,7 +22,6 @@ const DropdownMenu = ({
         arrowElement.classList.add('clicked');
       }
     }
-    // openRef.current = !isOpen;
     toggleDropdown();
   };
 
