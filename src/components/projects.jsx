@@ -8,8 +8,19 @@ import mathmagicians from '../assets/projects/mathmagicians.png';
 import leaderboard from '../assets/projects/leaderboard.png';
 import todo from '../assets/projects/todo.png';
 import financial from '../assets/projects/financial-insights.png';
+import budgetMonitor from '../assets/projects/Budget-monitor.png';
 
 const projects = [
+  {
+    id: 9,
+    name: 'Budget Monitor',
+    type: ['SOLO', 'Full Stack Project', '2023'],
+    description: 'Budget Monitor is a mobile web application where you can manage your budget; you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    technology: ['Ruby', 'Ruby On Rails', 'Rspec-rails', 'TailwindCSS'],
+    image: budgetMonitor,
+    link: 'https://github.com/Salimer/Budget-app/tree/develop',
+    liveDemo: 'budget-app-t49c.onrender.com/',
+  },
   {
     id: 8,
     name: 'Company Financial Insights',
