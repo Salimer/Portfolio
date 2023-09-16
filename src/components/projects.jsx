@@ -19,7 +19,7 @@ const projects = [
     technology: ['Ruby', 'Ruby On Rails', 'Rspec-rails', 'TailwindCSS'],
     image: budgetMonitor,
     link: 'https://github.com/Salimer/Budget-app/tree/develop',
-    liveDemo: 'budget-app-t49c.onrender.com/',
+    liveDemo: 'https://budget-app-t49c.onrender.com/',
   },
   {
     id: 8,
