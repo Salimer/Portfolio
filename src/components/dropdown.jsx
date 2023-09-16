@@ -6,16 +6,14 @@ const DropdownMenu = ({
   title, items, isOpen, toggleDropdown,
 }) => {
   const arrowRef = useRef(null);
-  // const openRef = useRef(false);
-
   const handleItemClick = (item) => {
     // Do something with the selected item
+    // eslint-disable-next-line
     console.log(item);
     // Close the dropdown
   };
 
   const handleDropdownClick = () => {
-    console.log(isOpen);
     const arrowElement = arrowRef.current;
     if (arrowElement && arrowElement.classList) {
       if (isOpen) {

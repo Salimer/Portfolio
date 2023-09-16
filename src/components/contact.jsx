@@ -11,6 +11,7 @@ const Contact = () => {
   const handleForm = (e) => {
     if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
       e.preventDefault();
+      // eslint-disable-next-line
       alert('Please fill in all fields.');
     }
   };
