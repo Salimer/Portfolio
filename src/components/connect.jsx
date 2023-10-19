@@ -13,7 +13,7 @@ const Connect = () => (
       <a href="https://www.youtube.com/channel/UCGKq9eJQY2qTKRfDDbMOUyA" target="_blank" rel="noreferrer">
         <ion-icon size="large" name="logo-youtube" />
       </a>
-      <a href="https://medium.com/@the.dragon.salim10" target="_blank" rel="noreferrer">
+      <a href="https://medium.com/@S.bamahfoodh" target="_blank" rel="noreferrer">
         <ion-icon size="large" name="logo-medium" />
       </a>
     </div>
