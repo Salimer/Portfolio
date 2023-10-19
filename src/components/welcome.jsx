@@ -11,9 +11,11 @@ const Welcome = () => (
       Glad to see you!
     </h1>
     <p className="text-lg text-left py-4">
-      I’m a software developer! Passionate about crafting digital experiences.
-      Check out my projects and let’s turn your ideas into reality.
-      Have a coding project in mind? Let’s chat! 🚀
+      I’m a software developer with a unique blend of Electrical Engineering and
+      Supply Chain expertise from Warwick University.
+      I’m passionate about creating digital experiences.
+      Explore my work, and let’s bring your projects to life.
+      Got a coding project in mind? Let’s chat! 🚀
     </p>
     <Connect />
   </Section>
