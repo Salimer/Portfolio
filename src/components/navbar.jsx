@@ -36,7 +36,7 @@ const Navbar = () => {
                 offset={-50}
                 duration={800}
                 onClick={() => { setOpen(false); }}
-                className="text-gray-800 hover:text-gray-400 duration-500"
+                className="text-gray-800 hover:text-logoColor font-black duration-500"
               >
                 {link.name}
               </Link>
@@ -63,5 +63,9 @@ ion-icon {
   &:hover {
     transform: rotate(360deg);
   }
+}
+
+.active {
+  color: #6936f5;
 }
 `;
