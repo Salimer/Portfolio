@@ -44,28 +44,39 @@ const About = () => {
           About Me
         </h1>
         <p className="text-lg text-left py-4">
-          Hi there! I’m Salim, an aspiring full-stack developer currently enrolled
-          in Microverse’s program. With a background in
-          Electrical Engineering and Engineering Business Management, I bring a
-          unique skill set and a passion for continuous learning.
+          Hello! I’m Salim, a recent graduate of Microverse’s Full-Stack development
+          program with a unique background
+          in Electrical Engineering and Engineering Business Management. My passion for software
+          development started at a young age when I began customizing my Android phone with
+          custom ROMs. During my time at Microverse, I had the opportunity to
+          collaborate globally on
+          coding projects through pair programming.
           {showFullText ? (
             <>
               <br />
               <br />
-              From a young age, I’ve been fascinated by software development, even customizing
-              my Android phone with custom ROMs. I specialize in React, Redux, Ruby
-              on Rails, and Python. I’m currently honing my skills at Microverse, collaborating
-              globally on coding projects through pair programming.
+              I have spent 1,300+ hours mastering my software
+              engineering fundamentals through collaboration. I
+              built 30+ projects while becoming proficient in Algorithms &
+              Data Structures, and a range of technologies.
               <br />
               <br />
-              I’m proud to have placed third in the 6th Arab Open Championship for Robotics.
-              Additionally, I hold an honors degree in Electrical Engineering and a master’s
-              degree from Warwick University, UK.
+              I take pride in my achievements, including a third-place finish in
+              the 6th Arab Open Championship for Robotics. I also hold an honors
+              degree in Electrical Engineering and a master’s degree from Warwick University, UK.
               <br />
               <br />
-              On my YouTube channel, I share programming tutorials, and I’m fluent in Arabic
-              and English. Currently, I’m also learning Turkish. I thrive on making new connections,
-              so feel free to reach out! 😃
+              I share my knowledge through programming tutorials on my
+              YouTube channel and am proficient in Arabic and English.
+              Currently, I’m also learning Turkish.
+              <br />
+              <br />
+              I’m also passionate about various personal interests and hobbies.
+              In my free time, I enjoy playing video games like Rocket League and
+              Call of Duty, as well as indulging my love for watching anime.
+              <br />
+              <br />
+              For job opportunities or collaborations, please feel free to reach out
             </>
           ) : null}
         </p>
@@ -77,9 +88,9 @@ const About = () => {
         <Button button handleClick={handleResumeClick}>Get my resume</Button>
       </article>
       <article className="md:flex-col md:pl-5 w-full">
-        <DropdownMenu title="Languages" items={['JavaScript', 'HTML', 'CSS']} isOpen={isOpen1} toggleDropdown={toggleDropdown1} />
-        <DropdownMenu title="Frameworks" items={['React', 'Vue', 'Angular']} isOpen={isOpen2} toggleDropdown={toggleDropdown2} />
-        <DropdownMenu title="Tools" items={['Git', 'GitHub', 'VS Code']} isOpen={isOpen3} toggleDropdown={toggleDropdown3} />
+        <DropdownMenu title="Languages" items={['JavaScript', 'Ruby', 'Python', 'Swift']} isOpen={isOpen1} toggleDropdown={toggleDropdown1} />
+        <DropdownMenu title="Frameworks" items={['React', 'Ruby on Rails', 'NodeJS', 'PostgreSQL', 'MongoDB']} isOpen={isOpen2} toggleDropdown={toggleDropdown2} />
+        <DropdownMenu title="Tools" items={['Git', 'GitHub', 'VS Code', 'Chrome Dev Tools']} isOpen={isOpen3} toggleDropdown={toggleDropdown3} />
       </article>
     </Section>
   );
