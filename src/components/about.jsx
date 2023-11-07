@@ -35,7 +35,7 @@ const About = () => {
   };
   const handleResumeClick = (e) => {
     e.preventDefault();
-    window.open('https://docs.google.com/document/d/1PyB0_12bv3lvoj88u92PmLHuWKKQPP9ZVmoHLwB7a3o/edit?usp=sharing');
+    window.open('https://drive.google.com/file/d/1YRZqDqpPxDHgEWWVlMe1MYx1hR8kmQp7/view?usp=sharing');
   };
   return (
     <Section id="about-me" className="p-6 flex flex-col justify-center items-center bg-white md:flex-row md:p-32">
