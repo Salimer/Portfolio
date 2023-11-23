@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.84deec4f.css",
-    "main.js": "/Portfolio/static/js/main.04e62c18.js",
+    "main.js": "/Portfolio/static/js/main.9ee4f71a.js",
     "static/media/RLCS.png": "/Portfolio/static/media/RLCS.7dfacc5d1be6de497a4a.png",
     "static/media/commentDish.png": "/Portfolio/static/media/commentDish.9b08bdb4f88931b8ba04.png",
     "static/media/spaceHub.png": "/Portfolio/static/media/spaceHub.e4c7132aefdd6b129902.png",
     "static/media/bookstore.png": "/Portfolio/static/media/bookstore.f030df01dd8fd28405a2.png",
+    "static/media/Book-an-appointment.png": "/Portfolio/static/media/Book-an-appointment.7fd8bd1c98df1fa5ae6d.png",
     "static/media/financial-insights.png": "/Portfolio/static/media/financial-insights.4a25e83a8037d6742825.png",
     "static/media/Budget-monitor.png": "/Portfolio/static/media/Budget-monitor.436edad025f49eab6676.png",
     "static/media/leaderboard.png": "/Portfolio/static/media/leaderboard.496553ccc42e84d1ec50.png",
@@ -16,10 +17,10 @@
     "static/media/contact-shapes.svg": "/Portfolio/static/media/contact-shapes.e170950d741461ccf60a0cc8643b87af.svg",
     "index.html": "/Portfolio/index.html",
     "main.84deec4f.css.map": "/Portfolio/static/css/main.84deec4f.css.map",
-    "main.04e62c18.js.map": "/Portfolio/static/js/main.04e62c18.js.map"
+    "main.9ee4f71a.js.map": "/Portfolio/static/js/main.9ee4f71a.js.map"
   },
   "entrypoints": [
     "static/css/main.84deec4f.css",
-    "static/js/main.04e62c18.js"
+    "static/js/main.9ee4f71a.js"
   ]
 }
