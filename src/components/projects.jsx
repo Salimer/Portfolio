@@ -9,8 +9,19 @@ import leaderboard from '../assets/projects/leaderboard.png';
 import todo from '../assets/projects/todo.png';
 import financial from '../assets/projects/financial-insights.png';
 import budgetMonitor from '../assets/projects/Budget-monitor.png';
+import bookAnAppointment from '../assets/projects/Book-an-appointment.png';
 
 const projects = [
+  {
+    id: 10,
+    name: 'Book an appointment',
+    type: ['COL', 'Full Stack Project', '2023'],
+    description: 'This project is a gallery for Harly-Davidson bikes where you can browse different models and check their details and prices. You can book an appointment to check your favourite bike in your city and suitable day',
+    technology: ['React', 'Ruby On Rails', 'Rspec-rails', 'TailwindCSS'],
+    image: bookAnAppointment,
+    link: 'https://github.com/Salimer/Budget-app/tree/develop',
+    liveDemo: 'https://harley-davidson-73po.onrender.com/',
+  },
   {
     id: 9,
     name: 'Budget Monitor',
