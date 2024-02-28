@@ -19,7 +19,7 @@ const projects = [
     description: 'This project is a gallery for Harly-Davidson bikes where you can browse different models and check their details and prices. You can book an appointment to check your favourite bike in your city and suitable day',
     technology: ['React', 'Ruby On Rails', 'Rspec-rails', 'TailwindCSS'],
     image: bookAnAppointment,
-    link: 'https://github.com/Salimer/Budget-app/tree/develop',
+    link: 'https://github.com/Salimer/Final-Capstone-Front-End',
     liveDemo: 'https://harley-davidson-73po.onrender.com/',
   },
   {
