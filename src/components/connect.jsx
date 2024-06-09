@@ -4,16 +4,16 @@ const Connect = () => (
   <Div className="w-full">
     <h3 className="text-logoColor">LET’S CONNECT</h3>
     <div className="flex gap-4 my-2">
-      <a href="https://github.com/Salimer" target="_blank" rel="noreferrer">
+      <a href="https://github.com/Salimer" target="_blank" rel="noreferrer" aria-label="Github profile">
         <ion-icon size="large" name="logo-github" />
       </a>
-      <a href="https://www.linkedin.com/in/sbamahfoodh/" target="_blank" rel="noreferrer">
+      <a href="https://www.linkedin.com/in/sbamahfoodh/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
         <ion-icon size="large" name="logo-linkedin" />
       </a>
-      <a href="https://www.youtube.com/channel/UCGKq9eJQY2qTKRfDDbMOUyA" target="_blank" rel="noreferrer">
+      <a href="https://www.youtube.com/channel/UCGKq9eJQY2qTKRfDDbMOUyA" target="_blank" rel="noreferrer" aria-label="Youtube profile">
         <ion-icon size="large" name="logo-youtube" />
       </a>
-      <a href="https://medium.com/@S.bamahfoodh" target="_blank" rel="noreferrer">
+      <a href="https://medium.com/@S.bamahfoodh" target="_blank" rel="noreferrer" aria-label="Medium profile">
         <ion-icon size="large" name="logo-medium" />
       </a>
     </div>
